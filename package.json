@@ -1,0 +1,32 @@
+{
+  "name": "nodeStartingTemplate",
+  "version": "1.0.0",
+  "description": "Node Starting Template",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "jest --silent --detectOpenHandles --coverage --runInBand",
+    "test-dev": "jest --watch --silent --detectOpenHandles --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pyriter/tdaclient.git"
+  },
+  "author": "Phong Vuong",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-jest": "^26.0.1",
+    "@babel/preset-env": "^7.10.2",
+    "jest": "^26.0.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "clearMocks": true,
+    "resetMocks": true,
+    "resetModules": true,
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "html"
+    ]
+  }
+}
